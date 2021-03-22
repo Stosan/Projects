@@ -1,0 +1,164 @@
+
+        .mainbg {
+            border-right: 0.4px solid #eee;
+                 }
+       
+       .mainbg h3{
+   text-align: center;font-weight: 900;text-transform: uppercase;color:var(--font-color);
+   margin: 25px auto
+       }
+   
+       .card {
+        border-radius: 15px;
+        margin: 0.5rem;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border:none
+        
+      }
+      .card img{
+          width:60%;margin: 0 auto
+      }
+      .card-body{
+          background-color: rgb(255, 255, 255,0.6);
+          position: relative;z-index: 1;top:3px;
+      }
+      
+      @media(min-width:1200px){
+        
+      
+      }
+      .blog-meta{
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;padding: 25px;
+      }
+   
+   .blog-meta i.fa {
+     color: var(--third-color);
+     background-color: var(--var-color);font-size: 15px;
+     border-radius: 50%;padding: 11px 13px;
+     box-shadow: -2px 2px 5px rgb(160, 160, 160);
+   }
+   .blog-meta span{
+     left: 40px;
+     position: relative;color: #000;
+     border-right: 1px solid rgb(218, 218, 218);padding-right: 12px;
+   }
+   .blog-meta a{
+    color: #9e9e9e;font-size: 1rem;
+   }
+     .description {
+       max-width: 990px;
+       color: #212121;
+       margin: 0 auto;
+       padding: calc(10px * 4);
+       text-align: justify;
+     }
+     
+     ul {
+       padding: 0;
+       margin: 0;
+     }
+     
+ /* form starting stylings ------------------------------- */
+ 
+.form-cont{
+    text-align: center;
+ }
+ .form-cont p{
+    position: relative;
+ }
+ .form-cont p::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 36%;
+    bottom: 47%;
+    width: 30px;
+    height: 2px;
+    background:var(--secondary-color);
+    transform: translate(-50%, 0);
+    transform: translate3d(-50%, 0, 0);
+ }
+ 
+ .sub-btn {
+    display: inline-block;
+    background: var(--third-color);
+    color: #fff;
+    padding: 0.8rem 5.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    top:12px;left:31%
+   }
+ #form-cap{
+    background:rgb(249, 249, 249,0.8);
+    padding:25px;margin-top: 15px;
+    text-align: center;
+    background-image: url(../asset/logo\ -naked-transp.png);
+  }
+  form{
+    background-color: rgb(255, 255, 255);padding:25px 0 35px 0;
+  }
+  
+  .group 			  { 
+    position:relative; 
+    margin-bottom:45px; 
+  }
+  input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:780px;
+    border:none;margin-left:120px;
+    border-bottom:1px solid #757575;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label 				 {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:13%;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+  /* FORM BOTTOM BARS ================================= */
+  .bar 	{ position:relative; display:block; width:780px;left:11.5%; }
+  .bar:before, .bar::after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:var(--overlay-color); 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
